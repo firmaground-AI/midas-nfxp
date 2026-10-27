@@ -1,4 +1,4 @@
-# midas-nfxp
+# MIDAS NFXP - API
 
 Read MIDAS **GTS NX** result files (`.nfxp`, written by the MEC solver) in Python: displacements, reactions, stresses, strains, structural forces and factors of safety for **2D (plane strain), axisymmetric and 3D** models, every saved stage and increment.
 
