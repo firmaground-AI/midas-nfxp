@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+
+# model and result files never belong in the repo (client data, large)
+*.nfxp
+*.mec
+*.gtb
+*.fpn
+*.log
+*.out
+*_results/
+*_pile_axial_force.*
+*_stress_vs_depth.png

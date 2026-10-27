@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "midas-nfxp"
+dynamic = ["version"]
+description = "Read MIDAS GTS NX / MEC solver result files (.nfxp) for 2D, axisymmetric and 3D models"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Rohith Swaminathan" }]
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.20"]
+keywords = ["midas", "gts nx", "nfxp", "finite element", "geotechnical", "post-processing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+pandas = ["pandas"]
+test = ["pytest"]
+
+[project.scripts]
+midas-nfxp = "midas_nfxp:main"
+
+[project.urls]
+Homepage = "https://github.com/firmaground-AI/midas-nfxp"
+
+[tool.setuptools]
+py-modules = ["midas_nfxp"]
+
+[tool.setuptools.dynamic]
+version = { attr = "midas_nfxp.__version__" }
